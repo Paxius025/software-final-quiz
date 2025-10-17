@@ -77,7 +77,7 @@ const Quiz: React.FC<QuizProps> = ({ initialQuestions, chapterName, onRestart })
             onClick={handleNextQuestion}
             className={`
               py-3 px-8 text-lg font-bold rounded-lg transition duration-200 
-              ${isLastQuestion ? 'bg-green-500 hover:bg-green-600' : 'bg-blue-500 hover:bg-blue-600'}
+              ${isLastQuestion ? 'bg-green-500 hover:bg-green-600' : 'bg-purple-500 hover:bg-purple-600'}
               text-white shadow-md
             `}
           >
@@ -92,7 +92,7 @@ const Quiz: React.FC<QuizProps> = ({ initialQuestions, chapterName, onRestart })
       </div>
       <div className="w-full bg-gray-200 rounded-full h-2.5">
         <div 
-          className="bg-blue-600 h-2.5 rounded-full transition-all duration-500" 
+          className="bg-purple-600 h-2.5 rounded-full transition-all duration-500" 
           style={{ width: `${((currentQuestionIndex + 1) / questions.length) * 100}%` }}
         ></div>
       </div>

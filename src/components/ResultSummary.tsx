@@ -14,8 +14,8 @@ const ResultSummary: React.FC<ResultSummaryProps> = ({ questions, onRestart, cha
   const scorePercentage = (correctAnswers / totalQuestions) * 100;
 
   return (
-    <div className="p-6 bg-white rounded-lg shadow-xl max-w-lg mx-auto border-t-4 border-blue-500">
-      <h2 className="text-3xl font-bold mb-4 text-center text-blue-600">
+    <div className="p-6 bg-white rounded-lg shadow-xl max-w-lg mx-auto border-t-4 border-purple-500">
+      <h2 className="text-3xl font-bold mb-4 text-center text-purple-600">
         สรุปผลการทำแบบทดสอบ
       </h2>
       <p className="text-xl text-center mb-6 text-gray-700">
@@ -41,7 +41,7 @@ const ResultSummary: React.FC<ResultSummaryProps> = ({ questions, onRestart, cha
 
       <button
         onClick={onRestart}
-        className="w-full mt-6 py-3 px-4 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-lg transition duration-200"
+        className="w-full mt-6 py-3 px-4 bg-purple-500 hover:bg-purple-600 text-white font-bold rounded-lg transition duration-200"
       >
         เริ่มใหม่ / เลือกโหมดใหม่
       </button>

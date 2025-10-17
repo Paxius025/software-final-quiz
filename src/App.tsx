@@ -78,7 +78,7 @@ const App: React.FC = () => {
     return (
       <div
         style={containerStyle}
-        className="text-center text-xl font-semibold text-blue-500"
+        className="text-center text-xl font-semibold text-purple-500"
       >
         กำลังโหลดข้อมูลแบบทดสอบ... 🔄
       </div>
@@ -103,7 +103,12 @@ const App: React.FC = () => {
     >
       <div className="w-full h-[80vh] flex justify-center items-center">
         <div className="w-full max-w-4xl">
-          <h1 className="text-4xl font-extrabold text-center mb-10 text-gray-800">
+          {/* hide h1 tag if click button to chose mode */}
+          <h1
+            className={`text-4xl font-extrabold text-center mb-10 text-gray-800 ${
+              currentQuizQuestions ? "hidden" : ""
+            }`}
+          >
             Prepare Software Engineer Final Quiz
           </h1>
 
@@ -125,7 +130,7 @@ const App: React.FC = () => {
         </div>
       </div>
 
-      <Footer/>
+      <Footer />
     </div>
   );
 };

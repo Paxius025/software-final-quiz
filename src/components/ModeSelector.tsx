@@ -90,9 +90,9 @@ const ModeSelector: React.FC<ModeSelectorProps> = ({ chapters, onStartQuiz, isLo
         onClick={handleStart}
         disabled={isStartButtonDisabled}
         className={`w-full mt-6 py-3 px-4 text-lg font-bold rounded-lg transition duration-300 ${
-          isStartButtonDisabled 
-            ? 'bg-gray-400 text-gray-600 cursor-not-allowed' 
-            : 'bg-green-500 hover:bg-green-600 text-white shadow-md'
+          isStartButtonDisabled
+            ? 'bg-gray-400 text-gray-600 cursor-not-allowed'
+            : 'bg-yellow-500 hover:bg-yellow-600 text-white shadow-md'
         }`}
       >
         {isLoading ? 'กำลังเตรียมข้อมูล...' : 'เริ่มทำแบบทดสอบ'}
