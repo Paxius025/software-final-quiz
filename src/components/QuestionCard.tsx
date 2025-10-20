@@ -67,7 +67,7 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
   useEffect(() => {
     if (!showExplanationModal) return;
 
-    setRemainingSeconds(15);
+    setRemainingSeconds(60);
     const interval = setInterval(() => {
       setRemainingSeconds((prev) => {
         if (prev <= 1) {
@@ -165,13 +165,13 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
                   </button>
                 </div>
 
-                <p className="mt-4 text-sm text-gray-600">
+                <p className="mt-4 text-m text-gray-600">
                   <span className="font-semibold">คำอธิบาย:</span> {explanation}
                 </p>
               </div>
 
               <div className="px-6 py-4 bg-gray-50 flex items-center justify-between">
-                <span className="text-xs text-gray-500">
+                <span className="text-s text-gray-500">
                   จะปิดอัตโนมัติใน {remainingSeconds} วิ
                 </span>
                 <button
